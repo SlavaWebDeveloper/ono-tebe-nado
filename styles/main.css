@@ -1,0 +1,217 @@
+:root {
+  --widht-column: 430px;
+}
+/*--  main --*/
+
+.cover {
+  width: 100%;
+  margin-bottom: 180px;
+  background-image: url("../images/cover.jpg");
+}
+
+.overlay {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: soft-light;
+}
+
+.container__cover {
+  padding: 165px 50px 50px;
+}
+
+.cover__title {
+  margin-bottom: 135px;
+  font-size: 100px;
+  line-height: 1.15em;
+  letter-spacing: 0.3em;
+}
+
+.aligned-text {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.aligned-text:last-child {
+  margin-bottom: 0;
+}
+
+.text_ls {
+  letter-spacing: 0.6em;
+}
+
+.text_ls-not {
+  letter-spacing: 0;
+}
+
+.aligned-text_left {
+  text-align: left;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.cover__description {
+  display: grid;
+  grid-template-columns: auto 257px;
+  grid-template-rows: 1fr;
+}
+
+.cover__description-text {
+  word-spacing: 1em;
+}
+
+.cover__description-text {
+  align-self: center;
+  margin-left: 372px;
+}
+
+.bet-button {
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+  background: none;
+}
+
+/*-- card --*/
+.lots {
+  margin-bottom: 180px;
+}
+
+.lots__heading {
+  padding: 0 0 27px 40px;
+}
+
+.lots__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.lots__list-item {
+  flex: 1 1 var(--widht-column);
+  min-height: 450px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 50px 40px;
+}
+
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_book {
+  background-image: url("../images/card-lot-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_picture {
+  background-image: url("../images/card-lot-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card__title {
+  color: #fff;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 1.2em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.card__text {
+  /* придумал только такой способ на случай переполнения текста внутри карточки */
+  display: -webkit-box;
+  overflow: hidden;
+  color: #fff;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 1.2em;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+}
+
+.lots__look-more-link {
+  margin-left: 40px;
+  border-bottom: 1px solid #000;
+  font-size: 20px;
+}
+
+/*-- end card --*/
+
+/*-- about --*/
+.about {
+  display: grid;
+  grid-template-columns: var(--widht-column) auto;
+  grid-template-rows: 240px;
+  grid-template-areas:
+    " logo title"
+    "logo text";
+  justify-items: center;
+  gap: 8px 25px;
+  margin-bottom: 180px;
+}
+
+.about__column {
+}
+
+.about__logo {
+  display: flex;
+  grid-area: logo;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  grid-area: title;
+  justify-self: left;
+  align-self: center;
+}
+
+.about__text-mb {
+  grid-area: text;
+  margin-bottom: 25px;
+}
+
+.about__text-mb:last-child {
+  margin-bottom: 0;
+}
+
+/*-- end about --*/
+
+/*--  end main --*/
